@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Addr:</strong>
+  <%= @ip_addr.addr %>
+</p>
+
+<p>
+  <strong>Default:</strong>
+  <%= @ip_addr.default %>
+</p>
+
+<p>
+  <strong>Server:</strong>
+  <%= @ip_addr.server %>
+</p>
+
+<%= link_to 'Edit', edit_ip_addr_path(@ip_addr) %> |
+<%= link_to 'Back', ip_addrs_path %>

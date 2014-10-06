@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @kiss_task.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @kiss_task.description %>
+</p>
+
+<p>
+  <strong>Script:</strong>
+  <%= @kiss_task.script %>
+</p>
+
+<%= link_to 'Edit', edit_kiss_task_path(@kiss_task) %> |
+<%= link_to 'Back', kiss_tasks_path %>

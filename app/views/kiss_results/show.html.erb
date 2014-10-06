@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @kiss_result.status %>
+</p>
+
+<p>
+  <strong>Output:</strong>
+  <%= @kiss_result.output %>
+</p>
+
+<p>
+  <strong>Error:</strong>
+  <%= @kiss_result.error %>
+</p>
+
+<p>
+  <strong>Kiss task:</strong>
+  <%= @kiss_result.kiss_task %>
+</p>
+
+<p>
+  <strong>Server:</strong>
+  <%= @kiss_result.server %>
+</p>
+
+<%= link_to 'Edit', edit_kiss_result_path(@kiss_result) %> |
+<%= link_to 'Back', kiss_results_path %>

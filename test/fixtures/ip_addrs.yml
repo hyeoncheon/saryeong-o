@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  addr: MyString
+  default: false
+  server_id: 
+
+two:
+  addr: MyString
+  default: false
+  server_id: 

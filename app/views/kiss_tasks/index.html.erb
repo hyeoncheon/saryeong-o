@@ -1,0 +1,29 @@
+<h1>Listing kiss_tasks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Script</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kiss_tasks.each do |kiss_task| %>
+      <tr>
+        <td><%= kiss_task.name %></td>
+        <td><%= kiss_task.description %></td>
+        <td><%= kiss_task.script %></td>
+        <td><%= link_to 'Show', kiss_task %></td>
+        <td><%= link_to 'Edit', edit_kiss_task_path(kiss_task) %></td>
+        <td><%= link_to 'Destroy', kiss_task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kiss task', new_kiss_task_path %>

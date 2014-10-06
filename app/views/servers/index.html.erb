@@ -1,0 +1,33 @@
+<h1>Listing servers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hostname</th>
+      <th>Os</th>
+      <th>Arch</th>
+      <th>Version</th>
+      <th>Uuid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @servers.each do |server| %>
+      <tr>
+        <td><%= server.hostname %></td>
+        <td><%= server.os %></td>
+        <td><%= server.arch %></td>
+        <td><%= server.version %></td>
+        <td><%= server.uuid %></td>
+        <td><%= link_to 'Show', server %></td>
+        <td><%= link_to 'Edit', edit_server_path(server) %></td>
+        <td><%= link_to 'Destroy', server, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Server', new_server_path %>

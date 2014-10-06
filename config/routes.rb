@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
  scope '/saryeong' do
+  resources :servers
+  resources :ip_addrs
+  resources :kiss_tasks
+  resources :kiss_results
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  root 'servers#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

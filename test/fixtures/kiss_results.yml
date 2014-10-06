@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: 1
+  output: MyText
+  error: MyText
+  kiss_task_id: 
+  server_id: 
+
+two:
+  status: 1
+  output: MyText
+  error: MyText
+  kiss_task_id: 
+  server_id: 

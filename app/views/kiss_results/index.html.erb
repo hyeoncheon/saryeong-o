@@ -1,0 +1,33 @@
+<h1>Listing kiss_results</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Output</th>
+      <th>Error</th>
+      <th>Kiss task</th>
+      <th>Server</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kiss_results.each do |kiss_result| %>
+      <tr>
+        <td><%= kiss_result.status %></td>
+        <td><%= kiss_result.output %></td>
+        <td><%= kiss_result.error %></td>
+        <td><%= kiss_result.kiss_task %></td>
+        <td><%= kiss_result.server %></td>
+        <td><%= link_to 'Show', kiss_result %></td>
+        <td><%= link_to 'Edit', edit_kiss_result_path(kiss_result) %></td>
+        <td><%= link_to 'Destroy', kiss_result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kiss result', new_kiss_result_path %>

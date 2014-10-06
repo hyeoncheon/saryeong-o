@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hostname:</strong>
+  <%= @server.hostname %>
+</p>
+
+<p>
+  <strong>Os:</strong>
+  <%= @server.os %>
+</p>
+
+<p>
+  <strong>Arch:</strong>
+  <%= @server.arch %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @server.version %>
+</p>
+
+<p>
+  <strong>Uuid:</strong>
+  <%= @server.uuid %>
+</p>
+
+<%= link_to 'Edit', edit_server_path(@server) %> |
+<%= link_to 'Back', servers_path %>

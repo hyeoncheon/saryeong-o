@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hostname: MyString
+  os: MyString
+  arch: MyString
+  version: MyString
+  uuid: MyString
+
+two:
+  hostname: MyString
+  os: MyString
+  arch: MyString
+  version: MyString
+  uuid: MyString

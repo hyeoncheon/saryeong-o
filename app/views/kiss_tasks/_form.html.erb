@@ -1,0 +1,29 @@
+<%= form_for(@kiss_task) do |f| %>
+  <% if @kiss_task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kiss_task.errors.count, "error") %> prohibited this kiss_task from being saved:</h2>
+
+      <ul>
+      <% @kiss_task.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :script %><br>
+    <%= f.text_area :script %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
