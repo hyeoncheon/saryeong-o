@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   resources :ip_addrs
   resources :kiss_tasks
   resources :kiss_results
+
+  get '/rping' => 'servers#rping', :defaults => { :format => :json }
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

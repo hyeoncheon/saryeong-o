@@ -6,6 +6,7 @@
       <th>Addr</th>
       <th>Default</th>
       <th>Server</th>
+      <th>Dup</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +17,7 @@
         <td><%= ip_addr.addr %></td>
         <td><%= ip_addr.default %></td>
         <td><%= ip_addr.server %></td>
+        <td><%= ip_addr.dup %></td>
         <td><%= link_to 'Show', ip_addr %></td>
         <td><%= link_to 'Edit', edit_ip_addr_path(ip_addr) %></td>
         <td><%= link_to 'Destroy', ip_addr, method: :delete, data: { confirm: 'Are you sure?' } %></td>
