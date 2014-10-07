@@ -38,3 +38,6 @@ gem 'unicorn'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+# gems for app.
+gem 'omniauth-oauth2'
