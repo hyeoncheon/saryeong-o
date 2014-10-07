@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :kiss_tasks
   resources :kiss_results
 
+  resources :users
+
   get '/rping' => 'servers#rping', :defaults => { :format => :json }
   get '/auth/:provider/callback', :to => 'sessions#create'
 

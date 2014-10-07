@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  mail: MyString
+  permission: MyString
+  image: MyString
+  siso_uid: MyString
+  siso_gid: MyString
+  siso_active: false
+  last_seen: 2014-10-07 10:20:39
+
+two:
+  name: MyString
+  mail: MyString
+  permission: MyString
+  image: MyString
+  siso_uid: MyString
+  siso_gid: MyString
+  siso_active: false
+  last_seen: 2014-10-07 10:20:39
