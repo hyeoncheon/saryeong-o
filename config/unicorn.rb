@@ -6,7 +6,7 @@
 APP_PATH = File.expand_path('../..', __FILE__)
 APP_NAME = File.basename(APP_PATH)
 
-worker_processes 1
+worker_processes 4
 #user "www-data", "www-data"
 
 working_directory APP_PATH
